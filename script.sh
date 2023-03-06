@@ -35,7 +35,7 @@ docker container start add
 
 docker container logs add
 
-# ADD Instruction
+# COPY Instruction
 docker build -t dedenr2912/copy copy
 
 docker container create --name copy dedenr2912/copy
@@ -43,3 +43,12 @@ docker container create --name copy dedenr2912/copy
 docker container start copy
 
 docker container logs copy
+
+# .dockerignore
+docker build -t dedenr2912/ignore ignore
+
+docker container create --name ignore dedenr2912/ignore
+
+docker container start ignore
+
+docker container logs ignore
