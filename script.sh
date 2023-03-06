@@ -34,3 +34,12 @@ docker container create --name add dedenr2912/add
 docker container start add
 
 docker container logs add
+
+# ADD Instruction
+docker build -t dedenr2912/copy copy
+
+docker container create --name copy dedenr2912/copy
+
+docker container start copy
+
+docker container logs copy
