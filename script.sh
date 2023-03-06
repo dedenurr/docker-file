@@ -52,3 +52,19 @@ docker container create --name ignore dedenr2912/ignore
 docker container start ignore
 
 docker container logs ignore
+
+# EXPOSE Instruction
+docker build -t dedenr2912/expose expose
+
+docker image inspect dedenr2912/expose
+
+docker container create --name expose -p 8080:8080 dedenr2912/expose
+
+docker container start expose
+
+docker container ls
+
+
+docker container stop expose
+
+
