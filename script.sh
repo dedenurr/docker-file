@@ -126,3 +126,23 @@ docker container create --name arg -p 8080:8080 dedenr2912/arg
 docker container start arg
 
 docker container exec -i -t arg //bin//sh
+
+# HEALTHCHECK Instruction
+docker build -t dedenr2912/health health
+
+docker container create --name health -p 8080:8080 dedenr2912/health
+
+docker container start health
+
+docker container ls
+
+docker container inspect health
+
+# ENTRYPOINT Instruction
+docker build -t dedenr2912/entrypoint entrypoint
+
+docker image inspect dedenr2912/entrypoint
+
+docker container create --name entrypoint -p 8080:8080 dedenr2912/entrypoint
+
+docker container start entrypoint
