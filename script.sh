@@ -107,3 +107,12 @@ docker container create --name workdir -p 8080:8080 dedenr2912/workdir #buat con
 docker container start workdir #start container
 
 docker container exec -i -t workdir //bin//sh #masuk ke bin sh
+
+# USER instruction
+docker build -t dedenr2912/user user
+
+docker container create --name user -p 8080:8080 dedenr2912/user
+
+docker container start user
+
+docker container exec -i -t user //bin//sh
