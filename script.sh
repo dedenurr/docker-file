@@ -64,7 +64,19 @@ docker container start expose
 
 docker container ls
 
-
 docker container stop expose
 
 
+# ENV Instruction
+
+docker build -t dedenr2912/env env
+
+docker image inspect dedenr2912/env
+
+docker container create --name env --env APP_PORT=9090 --publish 9090:9090 dedenr2912/env #setting port bagian code ini --env APP_PORT=9090 
+
+docker container start env
+
+docker container logs env
+
+docker container stop env
