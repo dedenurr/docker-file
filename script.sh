@@ -157,4 +157,3 @@ docker container create --name multi -p 8080:8080 dedenr2912/multi
 docker container start multi
 
 # token dedenr2912/multy
-dckr_pat_-3oXxcEb7CSS3rQ7lkZVJL6kHIw
