@@ -146,3 +146,15 @@ docker image inspect dedenr2912/entrypoint
 docker container create --name entrypoint -p 8080:8080 dedenr2912/entrypoint
 
 docker container start entrypoint
+
+# Multi Stage build
+docker build -t dedenr2912/multi multi
+
+docker image ls
+
+docker container create --name multi -p 8080:8080 dedenr2912/multi
+
+docker container start multi
+
+# token dedenr2912/multy
+dckr_pat_-3oXxcEb7CSS3rQ7lkZVJL6kHIw
