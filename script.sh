@@ -108,7 +108,7 @@ docker container start workdir #start container
 
 docker container exec -i -t workdir //bin//sh #masuk ke bin sh
 
-# USER instruction
+# USER Instruction
 docker build -t dedenr2912/user user
 
 docker container create --name user -p 8080:8080 dedenr2912/user
@@ -116,3 +116,13 @@ docker container create --name user -p 8080:8080 dedenr2912/user
 docker container start user
 
 docker container exec -i -t user //bin//sh
+
+# ARG Instruction
+
+docker build -t dedenr2912/arg arg --build-arg app=bukabagi
+
+docker container create --name arg -p 8080:8080 dedenr2912/arg
+
+docker container start arg
+
+docker container exec -i -t arg //bin//sh
