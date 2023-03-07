@@ -80,3 +80,21 @@ docker container start env
 docker container logs env
 
 docker container stop env
+
+
+# VOLUME Instruction
+
+docker build -t dedenr2912/volume volume
+
+docker image inspect dedenr2912/volume
+
+docker container create --name volume --env APP_PORT=8080 --publish 8080:8080 dedenr2912/volume
+
+docker container start volume
+
+docker container logs volume
+
+
+docker container inspect volume
+
+docker volume ls
