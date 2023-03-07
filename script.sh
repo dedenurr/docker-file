@@ -94,7 +94,16 @@ docker container start volume
 
 docker container logs volume
 
-
 docker container inspect volume
 
 docker volume ls
+
+# WORKDIR Instruction
+
+docker build -t dedenr2912/workdir workdir #buat image
+
+docker container create --name workdir -p 8080:8080 dedenr2912/workdir #buat container
+
+docker container start workdir #start container
+
+docker container exec -i -t workdir //bin//sh #masuk ke bin sh
