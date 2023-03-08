@@ -156,4 +156,9 @@ docker container create --name multi -p 8080:8080 dedenr2912/multi
 
 docker container start multi
 
-# token dedenr2912/multy
+# docker push docker hub
+docker login -u usernamedocker #login ke docker akun
+password # masukan password token
+docker push dokcerimage #push docker image yang telah dibuat 
+
+
